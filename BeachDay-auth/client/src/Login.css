@@ -1,0 +1,87 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4e1c1; /* Light tan/beach color */
+  color: #0066cc; /* Blue text color */
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.login-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Ensures form isn't too wide */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+input:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  color: white;
+  background: #0066cc; /* Blue button */
+  border-radius: 50px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #0055a5;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.redirect {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.redirect a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
