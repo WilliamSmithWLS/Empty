@@ -1,64 +1,72 @@
-/**
- * Register.js
- * 
- * This component provides a registration form for new users. It sends 
- * the registration details to the backend, and if successful, redirects to the login page.
- */
 import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import './Register.css';
 
-/**
- * Register component allows new users to create an account.
- * @returns {JSX.Element} The registration form.
- */
-const Register = () => {
+function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-  const API_URL = process.env.REACT_APP_API_URL || ''; // Fallback for local development
-  /**
-   * Handles form submission by sending registration details to the backend.
-   * @param {Object} e - Event object from the form submission.
-   */
-  const handleRegister = async (e) => {
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    try {
-      const response = await axios.post(
-        API_URL + '/auth/register',
-        { username, password },
-        { withCredentials: true }
-      );
-
-      if (response.data.message === 'User registered successfully') {
-        alert('Registration successful');
-        navigate('/'); // Navigate to login page after registration
-      }
-    } catch (error) {
-      console.error('Registration failed:', error);
-      alert('Error registering user');
+    if (password !== confirmPassword) {
+      setMessage("Passwords don't match.");
+      return;
     }
+
+    const response = await fetch('http://localhost:3000/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await response.json();
+    setMessage(data.message);
   };
 
   return (
-    <form onSubmit={handleRegister} style={{ display: 'flex', flexDirection: 'column', maxWidth: '300px' }}>
-      <h2>Register</h2>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button type="submit">Register</button>
-    </form>
+    <div className="register-container">
+      <div className="register-content">
+        <h1>Register</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit" className="btn">Register</button>
+        </form>
+        {message && <p className="error-message">{message}</p>}
+        <p className="redirect">
+          Already have an account? <a href="/login">Login here</a>
+        </p>
+      </div>
+    </div>
   );
-};
+}
 
 export default Register;
