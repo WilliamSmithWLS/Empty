@@ -12,22 +12,27 @@
 
 .login-content {
   background-color: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* Ensures form isn't too wide */
+  max-width: 400px; /* Controls the width of the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the form content */
+  box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem; /* Slightly larger for prominence */
   margin-bottom: 20px;
   color: #0066cc;
+  font-weight: bold;
 }
 
 .input-group {
-  margin-bottom: 20px;
-  text-align: left;
+  margin-bottom: 25px; /* Space between the input fields */
+  width: 100%;
 }
 
 label {
@@ -37,33 +42,36 @@ label {
 }
 
 input {
-  width: 100%;
-  padding: 10px;
+  width: 100%; /* Ensures inputs are the same width as the form */
+  padding: 12px;
   font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 8px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  transition: border-color 0.3s ease; /* Smooth border focus transition */
 }
 
 input:focus {
-  border-color: #0066cc;
+  border-color: #0066cc; /* Focused input gets blue border */
   outline: none;
 }
 
 button {
-  padding: 12px 25px;
+  width: 100%; /* Make button match the width of the inputs */
+  padding: 12px;
   font-size: 1.2rem;
   color: white;
-  background: #0066cc; /* Blue button */
+  background-color: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 100%;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 15px; /* Adds space between the button and input fields */
 }
 
 button:hover {
-  background: #0055a5;
-  transform: scale(1.05);
+  background-color: #0055a5; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 .error-message {
