@@ -12,11 +12,11 @@
 
 .login-content {
   background-color: white;
-  padding: 30px;
+  padding: 40px; /* Increased padding for more space inside the box */
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 450px; /* Increased width for a slightly wider form */
+  max-width: 500px; /* Adjusted width for a wider form */
   box-sizing: border-box;  /* Ensure padding is included in the total width */
   display: flex;
   flex-direction: column;  /* Arrange children elements vertically */
@@ -25,24 +25,24 @@
 
 h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased margin for more space below the title */
   color: #0066cc;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* Increased margin for more space between input groups */
   width: 100%; /* Ensure input group takes the full width of the form */
 }
 
 label {
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Increased margin for more space below the label */
   display: block;
 }
 
 input {
-  width: 90%; /* Makes input fields wider, leaving less white space */
-  padding: 12px;  /* Increased padding for larger fields */
+  width: 100%; /* Full width input fields */
+  padding: 15px;  /* Increased padding for larger fields */
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -56,14 +56,15 @@ input:focus {
 }
 
 button {
-  padding: 12px 25px;
+  padding: 15px 30px; /* Increased padding for a larger button */
   font-size: 1.2rem;
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 90%; /* Makes button width match the input fields */
+  width: 100%; /* Full width button */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 20px; /* Added margin to separate button from inputs */
 }
 
 button:hover {
@@ -74,11 +75,11 @@ button:hover {
 .error-message {
   color: red;
   font-size: 1rem;
-  margin-top: 10px;
+  margin-top: 15px; /* Increased margin for more space above the error message */
 }
 
 .redirect {
-  margin-top: 20px;
+  margin-top: 25px; /* Increased margin for more space above the redirect link */
   font-size: 1rem;
 }
 
