@@ -34,7 +34,7 @@ function BeachInfo() {
       {error && <p className="error-message">{error}</p>}
       {weather && <p className="weather-info">{weather}</p>}
       <img
-        src="/https://placehold.co/600x400/FFA500/FFFFFF"
+        src="https://www.orangeland.com/tour-our-park/"
         alt="Beach drawing"
         className="beach-image"
       />
