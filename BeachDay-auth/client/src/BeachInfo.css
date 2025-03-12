@@ -3,7 +3,8 @@
   padding: 20px;
   background-color: #f4e1c1; /* Tan beach background */
   color: #0066cc; /* Blue text */
-  height: 100vh;
+  height: auto; /* Let the content grow based on the content's height */
+  min-height: 100vh; /* Ensure at least 100vh space for the container */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,59 +13,51 @@
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2rem;
+  margin-bottom: 20px; /* Increased margin */
 }
 
 .search-form {
-  margin-top: 20px;
+  margin-top: 30px; /* Increased margin */
   display: flex;
-  flex-direction: row; /* Align search bar and button horizontally */
+  flex-direction: row;
   justify-content: center;
-  gap: 10px; /* Adds space between the search input and button */
+  gap: 15px; /* Adds space between the search input and button */
 }
 
 input {
-  padding: 10px;
-  font-size: 1rem;
+  padding: 15px; /* Increased padding for input */
+  font-size: 1.2rem; /* Increased font size */
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: 250px; /* Search bar width */
+  width: 300px; /* Increased width of search bar */
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 15px 25px; /* Increased padding for button */
+  font-size: 1.2rem; /* Increased font size */
   color: white;
   background: #0066cc;
   border-radius: 5px;
   margin-left: 10px;
   cursor: pointer;
-  width: 150px; /* Adjust button width */
+  width: 180px; /* Adjust button width to be larger */
 }
 
 button:hover {
   background: #0055a5;
 }
 
-.error-message {
-  color: red;
-  margin-top: 10px;
-}
-
 .weather-info {
-  margin-top: 20px;
-  font-size: 1.2rem;
+  margin-top: 30px; /* Increased margin */
+  font-size: 1.5rem; /* Larger font for weather info */
 }
 
 .beach-image {
-  width: 80%;  /* Makes the image scale responsively */
-  max-width: 800px; /* Prevents the image from getting too large */
+  width: 100%; /* Makes the image scale responsively */
+  max-width: 1000px; /* Allow the image to be larger */
   height: auto;
-  margin-top: 20px;
+  margin-top: 30px; /* Increased margin */
   border-radius: 10px;
 }
+
 
