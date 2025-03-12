@@ -30,7 +30,7 @@ h1 {
 }
 
 .input-group {
-  margin-bottom: 25px; /* Increased margin for more space between input groups */
+  margin-bottom: 20px; /* Increased margin for more space between input groups */
   width: 100%; /* Ensure input group takes the full width of the form */
 }
 
@@ -41,7 +41,7 @@ label {
 }
 
 input {
-  width: 100%; /* Full width input fields */
+  width: 300px; /* Full width input fields */
   padding: 10px;  /* Increased padding for larger fields */
   font-size: 1rem;
   border: 1px solid #ddd;
@@ -56,12 +56,12 @@ input:focus {
 }
 
 button {
-  padding: 15px 30px; /* Increased padding for a larger button */
+  padding: 10px 20px; /* Increased padding for a larger button */
   font-size: 1.2rem;
   color: white;
   background: #0066cc; /* Blue button */
-  border-radius: 100px;
-  width: 100%; /* Full width button */
+  border-radius: 50px;
+  width: 300px; /* Full width button */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
   margin-top: 10px; /* Added margin to separate button from inputs */
