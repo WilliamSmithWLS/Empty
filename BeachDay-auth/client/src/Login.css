@@ -16,7 +16,8 @@
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* Ensures form isn't too wide */
+  max-width: 350px; /* Adjusted to make it more vertical */
+  box-sizing: border-box;  /* Ensure padding is included in the total width */
 }
 
 h1 {
@@ -37,13 +38,13 @@ label {
 }
 
 input {
-  width: 100%;  /* Makes input width match the container */
-  padding: 10px;
+  width: 100%; /* Ensures input fills the container */
+  padding: 12px;  /* Increased padding for larger fields */
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-top: 5px;
-  box-sizing: border-box;  /* Ensures padding doesn't affect width */
+  box-sizing: border-box; /* Ensures padding is part of the width */
 }
 
 input:focus {
