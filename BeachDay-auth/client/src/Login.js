@@ -18,7 +18,7 @@ function Login() {
     const data = await response.json();
 
     if (data.success) {
-      navigate('/beach-day'); // Redirect to Beach Info Page
+      navigate('/beach-info'); // Redirect to Beach Info Page
     } else {
       setMessage(data.message);
     }
