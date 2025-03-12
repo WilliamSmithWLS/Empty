@@ -12,7 +12,7 @@
 
 .login-content {
   background-color: white;
-  padding: 20px; /* Increased padding for more space inside the box */
+  padding: 10px; /* Increased padding for more space inside the box */
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
