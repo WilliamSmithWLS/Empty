@@ -85,3 +85,54 @@ button:hover {
 .redirect a:hover {
   text-decoration: underline;
 }
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+input:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  color: white;
+  background: #0066cc; /* Blue button */
+  border-radius: 50px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #0055a5;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.redirect {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.redirect a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
