@@ -1,27 +1,30 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Login.css';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 
-function Login() {
+function Login({ setAuthenticated }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();  // Initialize the useNavigate hook
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch('http://localhost:3000/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ username, password }),
     });
     const data = await response.json();
-    setMessage(data.message);
-
+    
     if (data.message === 'Authentication successful') {
-      // Set the authenticated state and navigate to the BeachInfo page
-      localStorage.setItem('authenticated', 'true'); // Optionally store in localStorage
-      navigate('/beach-info'); // Navigate to the Beach Info page
+      // Set the authenticated state to true when login is successful
+      setAuthenticated(true);
+
+      // Navigate to the Beach Info page directly after successful login
+      navigate('/beach-info');
+    } else {
+      setMessage(data.message); // Show the error message if login fails
     }
   };
 
@@ -62,3 +65,4 @@ function Login() {
 }
 
 export default Login;
+
