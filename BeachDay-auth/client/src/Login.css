@@ -41,7 +41,7 @@ label {
 }
 
 input {
-  width: 100%; /* Full width input fields */
+  width: 200%; /* Full width input fields */
   padding: 15px;  /* Increased padding for larger fields */
   font-size: 1rem;
   border: 1px solid #ddd;
