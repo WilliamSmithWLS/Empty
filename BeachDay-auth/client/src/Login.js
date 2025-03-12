@@ -6,7 +6,7 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-  const navigate = useNavigate(); // Initialize navigation hook
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,11 +16,12 @@ function Login() {
       body: JSON.stringify({ username, password })
     });
     const data = await response.json();
+    setMessage(data.message);
 
-    if (data.success) {
-      navigate('/beach-info'); // Redirect to Beach Info Page
-    } else {
-      setMessage(data.message);
+    if (data.message === 'Authentication successful') {
+      // Set the authenticated state and navigate to the BeachInfo page
+      localStorage.setItem('authenticated', 'true'); // Optionally store in localStorage
+      navigate('/beach-info'); // Navigate to the Beach Info page
     }
   };
 
