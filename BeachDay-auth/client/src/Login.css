@@ -37,12 +37,13 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 100%;  /* Makes input width match the container */
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-top: 5px;
+  box-sizing: border-box;  /* Ensures padding doesn't affect width */
 }
 
 input:focus {
@@ -56,7 +57,7 @@ button {
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 100%;
+  width: 100%; /* Ensures button matches input field width */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
@@ -85,3 +86,4 @@ button:hover {
 .redirect a:hover {
   text-decoration: underline;
 }
+
