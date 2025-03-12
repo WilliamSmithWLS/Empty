@@ -13,26 +13,24 @@ function App() {
     localStorage.setItem('authenticated', JSON.stringify(authenticated));
   }, [authenticated]);
 
-  return (
+return (
     <Router>
       <Routes>
-        {/* Landing Page - Accessible to Everyone */}
         <Route path="/" element={<LandingPage />} />
-
-        {/* Login Page */}
         <Route
           path="/login"
           element={
-            authenticated ? <Navigate to="/" replace /> : <Login setAuthenticated={setAuthenticated} />
+            authenticated ? (
+              <Navigate to="/beach-info" replace />
+            ) : (
+              <Login setAuthenticated={setAuthenticated} />
+            )
           }
         />
-
-        {/* Register Page */}
+        <Route path="/register" element={<Register />} />
         <Route
-          path="/register"
-          element={
-            authenticated ? <Navigate to="/" replace /> : <Register />
-          }
+          path="/beach-info"
+          element={authenticated ? <BeachInfo /> : <Navigate to="/login" replace />}
         />
       </Routes>
     </Router>
