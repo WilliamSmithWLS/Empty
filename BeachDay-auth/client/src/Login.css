@@ -12,11 +12,11 @@
 
 .login-content {
   background-color: white;
-  padding: 60px; /* Increased padding */
+  padding: 60px;  /* Increased padding */
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 525px; /* Increased max-width */
+  max-width: 525px; /* Slightly wider form */
   box-sizing: border-box;
   display: flex;
   flex-direction: column; /* Stack input fields vertically */
@@ -24,29 +24,29 @@
 }
 
 h1 {
-  font-size: 4.5rem; /* Increased font size */
-  margin-bottom: 30px; /* Increased bottom margin */
+  font-size: 4rem;  /* Larger font size */
+  margin-bottom: 30px;  /* Increased margin */
   color: #0066cc;
 }
 
 .input-group {
-  margin-bottom: 30px; /* Increased bottom margin */
+  margin-bottom: 30px;  /* Increased margin */
   width: 100%; /* Ensure input group takes the full width */
 }
 
 label {
-  font-size: 1.8rem; /* Increased font size */
+  font-size: 1.5rem; /* Increased font size */
   margin-bottom: 8px; /* Increased margin */
   display: block;
 }
 
 input {
   width: 90%; /* Match the width of the button */
-  padding: 18px; /* Increased padding */
-  font-size: 1.5rem; /* Increased font size */
+  padding: 15px;  /* Increased padding */
+  font-size: 1.2rem;  /* Larger font size */
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin-top: 8px; /* Increased margin-top */
+  margin-top: 8px;  /* Increased margin */
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
@@ -57,8 +57,8 @@ input:focus {
 
 button {
   width: 90%; /* Match the width of the input fields */
-  padding: 18px 35px; /* Increased padding */
-  font-size: 1.8rem; /* Increased font size */
+  padding: 15px 30px;  /* Larger padding */
+  font-size: 1.5rem;  /* Larger font size */
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
@@ -73,13 +73,13 @@ button:hover {
 
 .error-message {
   color: red;
-  font-size: 1.5rem; /* Increased font size */
-  margin-top: 15px; /* Increased margin */
+  font-size: 1.2rem; /* Larger font size */
+  margin-top: 15px;
 }
 
 .redirect {
-  margin-top: 30px; /* Increased margin-top */
-  font-size: 1.5rem; /* Increased font size */
+  margin-top: 30px;
+  font-size: 1.2rem;  /* Larger font size */
 }
 
 .redirect a {
@@ -90,4 +90,3 @@ button:hover {
 .redirect a:hover {
   text-decoration: underline;
 }
-
