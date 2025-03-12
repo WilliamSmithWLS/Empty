@@ -12,11 +12,11 @@
 
 .login-content {
   background-color: white;
-  padding: 40px;
+  padding: 60px; /* Increased padding */
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 350px; /* Slightly wider form */
+  max-width: 525px; /* Increased max-width */
   box-sizing: border-box;
   display: flex;
   flex-direction: column; /* Stack input fields vertically */
@@ -24,29 +24,29 @@
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 4.5rem; /* Increased font size */
+  margin-bottom: 30px; /* Increased bottom margin */
   color: #0066cc;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased bottom margin */
   width: 100%; /* Ensure input group takes the full width */
 }
 
 label {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+  font-size: 1.8rem; /* Increased font size */
+  margin-bottom: 8px; /* Increased margin */
   display: block;
 }
 
 input {
   width: 90%; /* Match the width of the button */
-  padding: 12px;
-  font-size: 1rem;
+  padding: 18px; /* Increased padding */
+  font-size: 1.5rem; /* Increased font size */
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin-top: 5px;
+  margin-top: 8px; /* Increased margin-top */
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
@@ -57,8 +57,8 @@ input:focus {
 
 button {
   width: 90%; /* Match the width of the input fields */
-  padding: 12px 25px;
-  font-size: 1.2rem;
+  padding: 18px 35px; /* Increased padding */
+  font-size: 1.8rem; /* Increased font size */
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
@@ -73,13 +73,13 @@ button:hover {
 
 .error-message {
   color: red;
-  font-size: 1rem;
-  margin-top: 10px;
+  font-size: 1.5rem; /* Increased font size */
+  margin-top: 15px; /* Increased margin */
 }
 
 .redirect {
-  margin-top: 20px;
-  font-size: 1rem;
+  margin-top: 30px; /* Increased margin-top */
+  font-size: 1.5rem; /* Increased font size */
 }
 
 .redirect a {
