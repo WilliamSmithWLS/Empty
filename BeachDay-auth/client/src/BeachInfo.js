@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./BeachInfo.css";
+import projectPhoto from "./projectphoto.png"; // Adjusted path for direct src folder
 
 function BeachInfo() {
   const [beach, setBeach] = useState("");
