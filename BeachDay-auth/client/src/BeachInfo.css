@@ -4,6 +4,10 @@
   background-color: #f4e1c1; /* Tan beach background */
   color: #0066cc; /* Blue text */
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 h1 {
@@ -17,8 +21,10 @@ p {
 
 .search-form {
   margin-top: 20px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row; /* Align search bar and button horizontally */
   justify-content: center;
+  gap: 10px; /* Adds space between the search input and button */
 }
 
 input {
