@@ -37,13 +37,12 @@ label {
 }
 
 input {
-  width: 100%;  /* Makes input width match the container */
+  width: 100%;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-top: 5px;
-  box-sizing: border-box;  /* Ensures padding doesn't affect width */
 }
 
 input:focus {
@@ -86,4 +85,3 @@ button:hover {
 .redirect a:hover {
   text-decoration: underline;
 }
-
