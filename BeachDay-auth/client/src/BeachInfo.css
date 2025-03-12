@@ -55,7 +55,8 @@ button:hover {
 }
 
 .beach-image {
-  width: 300px;
+  width: 80%;  /* Makes the image scale responsively */
+  max-width: 800px; /* Prevents the image from getting too large */
   height: auto;
   margin-top: 20px;
   border-radius: 10px;
