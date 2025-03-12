@@ -12,11 +12,11 @@
 
 .login-content {
   background-color: white;
-  padding: 10px; /* Increased padding for more space inside the box */
+  padding: 20px; /* Reduced padding for a tighter fit */
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* Adjusted width for a wider form */
+  max-width: 400px; /* Keep the white box width the same */
   box-sizing: border-box;  /* Ensure padding is included in the total width */
   display: flex;
   flex-direction: column;  /* Arrange children elements vertically */
@@ -24,25 +24,28 @@
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 30px; /* Increased margin for more space below the title */
+  font-size: 2.5rem; /* Slightly smaller font size */
+  margin-bottom: 15px; /* Reduced margin for tighter spacing */
   color: #0066cc;
 }
 
 .input-group {
-  margin-bottom: 20px; /* Increased margin for more space between input groups */
+  margin-bottom: 15px; /* Reduced margin for tighter spacing */
   width: 100%; /* Ensure input group takes the full width of the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the input boxes horizontally */
 }
 
 label {
-  font-size: 1.2rem;
-  margin-bottom: 10px; /* Increased margin for more space below the label */
+  font-size: 1.1rem; /* Slightly smaller font size */
+  margin-bottom: 5px; /* Reduced margin for tighter spacing */
   display: block;
 }
 
 input {
-  width: 300px; /* Full width input fields */
-  padding: 10px;  /* Increased padding for larger fields */
+  width: 300px; /* Set a specific width for the input boxes */
+  padding: 10px;  /* Reduced padding for tighter fields */
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -56,15 +59,15 @@ input:focus {
 }
 
 button {
-  padding: 10px 20px; /* Increased padding for a larger button */
-  font-size: 1.2rem;
+  padding: 10px 20px; /* Reduced padding for a smaller button */
+  font-size: 1.1rem; /* Slightly smaller font size */
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 300px; /* Full width button */
+  width: 300px; /* Match the width of the input boxes */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
-  margin-top: 10px; /* Added margin to separate button from inputs */
+  margin-top: 15px; /* Reduced margin for tighter spacing */
 }
 
 button:hover {
@@ -74,13 +77,13 @@ button:hover {
 
 .error-message {
   color: red;
-  font-size: 1rem;
-  margin-top: 15px; /* Increased margin for more space above the error message */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  margin-top: 10px; /* Reduced margin for tighter spacing */
 }
 
 .redirect {
-  margin-top: 25px; /* Increased margin for more space above the redirect link */
-  font-size: 1rem;
+  margin-top: 15px; /* Reduced margin for tighter spacing */
+  font-size: 0.9rem; /* Slightly smaller font size */
 }
 
 .redirect a {
