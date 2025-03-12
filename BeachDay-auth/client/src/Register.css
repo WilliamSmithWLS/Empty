@@ -19,7 +19,7 @@
   max-width: 400px; /* Controls the width of the form */
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligns the form elements to the left */
+  align-items: center; /* Aligns the form elements to the left */
   box-sizing: border-box; /* Ensures padding is included in width */
 }
 
@@ -28,7 +28,6 @@ h1 {
   margin-bottom: 20px;
   color: #0066cc;
   font-weight: bold;
-  text-align: center; /* Keep the heading centered */
 }
 
 .input-group {
@@ -85,7 +84,6 @@ button:hover {
 .redirect {
   margin-top: 20px;
   font-size: 1rem;
-  text-align: center; /* Keep the redirect link centered */
 }
 
 .redirect a {
