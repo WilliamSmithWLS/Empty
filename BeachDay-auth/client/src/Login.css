@@ -41,7 +41,7 @@ label {
 }
 
 input {
-  width: 200%; /* Full width input fields */
+  width: 100%; /* Full width input fields */
   padding: 15px;  /* Increased padding for larger fields */
   font-size: 1rem;
   border: 1px solid #ddd;
@@ -61,7 +61,7 @@ button {
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 100%; /* Full width button */
+  width: 200%; /* Full width button */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
   margin-top: 20px; /* Added margin to separate button from inputs */
