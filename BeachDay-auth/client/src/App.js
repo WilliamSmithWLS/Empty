@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './Login';
 import Register from './Register';
 import LandingPage from './LandingPage'; // Import the landing page
+import BeachInfo from "./BeachInfo";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(
