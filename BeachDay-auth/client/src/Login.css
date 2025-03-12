@@ -16,7 +16,7 @@
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 350px; /* Adjusted to make it more vertical */
+  max-width: 450px; /* Increased width for a slightly wider form */
   box-sizing: border-box;  /* Ensure padding is included in the total width */
 }
 
@@ -87,4 +87,3 @@ button:hover {
 .redirect a:hover {
   text-decoration: underline;
 }
-
