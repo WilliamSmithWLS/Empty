@@ -41,7 +41,7 @@ label {
 }
 
 input {
-  width: 100%; /* Ensures input fills the container */
+  width: 90%; /* Makes input fields wider, leaving less white space */
   padding: 12px;  /* Increased padding for larger fields */
   font-size: 1rem;
   border: 1px solid #ddd;
@@ -61,7 +61,7 @@ button {
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 100%; /* Ensures button matches input field width */
+  width: 90%; /* Makes button width match the input fields */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
