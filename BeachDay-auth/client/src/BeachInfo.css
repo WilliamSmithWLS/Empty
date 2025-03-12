@@ -17,6 +17,8 @@ p {
 
 .search-form {
   margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
 }
 
 input {
@@ -24,17 +26,18 @@ input {
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: 250px;
+  width: 250px; /* Search bar width */
 }
 
 button {
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 1rem;
   color: white;
   background: #0066cc;
   border-radius: 5px;
   margin-left: 10px;
   cursor: pointer;
+  width: 150px; /* Adjust button width */
 }
 
 button:hover {
@@ -57,3 +60,4 @@ button:hover {
   margin-top: 20px;
   border-radius: 10px;
 }
+
