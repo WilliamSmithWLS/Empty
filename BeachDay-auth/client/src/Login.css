@@ -12,11 +12,11 @@
 
 .login-content {
   background-color: white;
-  padding: 10px;
+  padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 450px; /* Slightly wider form */
+  max-width: 350px; /* Slightly wider form */
   box-sizing: border-box;
   display: flex;
   flex-direction: column; /* Stack input fields vertically */
