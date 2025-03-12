@@ -18,6 +18,9 @@
   width: 100%;
   max-width: 450px; /* Increased width for a slightly wider form */
   box-sizing: border-box;  /* Ensure padding is included in the total width */
+  display: flex;
+  flex-direction: column;  /* Arrange children elements vertically */
+  align-items: center;  /* Center the children horizontally */
 }
 
 h1 {
@@ -28,7 +31,7 @@ h1 {
 
 .input-group {
   margin-bottom: 20px;
-  text-align: left;
+  width: 100%; /* Ensure input group takes the full width of the form */
 }
 
 label {
