@@ -17,24 +17,17 @@
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px; /* Ensures form isn't too wide */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   color: #0066cc;
 }
 
 .input-group {
   margin-bottom: 20px;
-  width: 100%;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 label {
@@ -44,12 +37,13 @@ label {
 }
 
 input {
-  width: 80%;  /* Adjust input width */
+  width: 100%;  /* Makes input width match the container */
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-top: 5px;
+  box-sizing: border-box;  /* Ensures padding doesn't affect width */
 }
 
 input:focus {
@@ -63,10 +57,9 @@ button {
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 80%;  /* Adjust button width */
+  width: 100%;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
-  margin-top: 20px;
 }
 
 button:hover {
