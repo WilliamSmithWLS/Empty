@@ -16,11 +16,11 @@
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 450px; /* Increased width for a slightly wider form */
+  max-width: 450px; /* Slightly wider form */
   box-sizing: border-box;
   display: flex;
-  flex-direction: column; /* Arrange children elements vertically */
-  align-items: center; /* Center the children horizontally */
+  flex-direction: column; /* Stack input fields vertically */
+  align-items: center; /* Center the content horizontally */
 }
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
 
 .input-group {
   margin-bottom: 20px;
-  width: 100%; /* Ensure input group takes the full width of the form */
+  width: 100%; /* Ensure input group takes the full width */
 }
 
 label {
@@ -41,13 +41,13 @@ label {
 }
 
 input {
-  width: 90%; /* Makes input fields wider, leaving less white space */
+  width: 90%; /* Match the width of the button */
   padding: 12px;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-top: 5px;
-  box-sizing: border-box; /* Ensures padding is part of the width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 input:focus {
@@ -56,12 +56,12 @@ input:focus {
 }
 
 button {
+  width: 90%; /* Match the width of the input fields */
   padding: 12px 25px;
   font-size: 1.2rem;
   color: white;
   background: #0066cc; /* Blue button */
   border-radius: 50px;
-  width: 90%; /* Makes button width match the input fields */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
@@ -90,3 +90,4 @@ button:hover {
 .redirect a:hover {
   text-decoration: underline;
 }
+
